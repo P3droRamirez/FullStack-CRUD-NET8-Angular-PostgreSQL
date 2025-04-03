@@ -23,4 +23,12 @@ docker --version
 docker-compose --version
 node -v
 ng version
+```
+
+## 🎥 Demostración  
+
+Aquí puedes ver la aplicación en funcionamiento:  
+
+![Demo de la aplicación](./docs/demo.gif)
+
 
