@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendAppProducto</name>
+    </assembly>
+    <members>
+        <member name="M:BackendAppProducto.Controllers.ProductsController.GetProducts">
+            <summary>
+            Listado de todos los productos
+            </summary>
+            <returns>Lista de productos</returns>
+        </member>
+        <member name="M:BackendAppProducto.Controllers.ProductsController.GetProduct(System.Guid)">
+            <summary>
+            Lista un solo producto por su Id
+            </summary>
+            <param name="id">El id del producto a mostrar</param>
+            <returns>Un solo producto</returns>
+        </member>
+        <member name="M:BackendAppProducto.Controllers.ProductsController.PutProduct(System.Guid,BackendAppProducto.Models.Product)">
+            <summary>
+            Modifica un producto según su Id
+            </summary>
+            <param name="id"></param>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAppProducto.Controllers.ProductsController.PostProduct(BackendAppProducto.Models.Product)">
+            <summary>
+            Crea un nuevo producto
+            </summary>
+            <param name="product">Datos del nuevo producto</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAppProducto.Controllers.ProductsController.DeleteProduct(System.Guid)">
+            <summary>
+            Elimina un producto según su Id
+            </summary>
+            <param name="id">Id del producto a eliminar</param>
+        </member>
+        <member name="T:BackendAppProducto.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendAppProducto.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendAppProducto.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BackendAppProducto.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

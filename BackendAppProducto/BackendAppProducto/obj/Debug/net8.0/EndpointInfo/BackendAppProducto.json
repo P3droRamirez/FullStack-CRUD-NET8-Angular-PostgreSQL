@@ -1,0 +1,250 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Product API",
+    "description": "Api para realizar CRUD de Productos",
+    "contact": {
+      "name": "Pedro Ramirez Gonzalez GitHub",
+      "url": "https://github.com/P3droRamirez"
+    },
+    "license": {
+      "name": "MIT License",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Products/products": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Listado de todos los productos",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/list/{id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Lista un solo producto por su Id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El id del producto a mostrar",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/modify/{id}": {
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Modifica un producto según su Id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Products": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Crea un nuevo producto",
+        "requestBody": {
+          "description": "Datos del nuevo producto",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/deleteProduct/{id}": {
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Elimina un producto según su Id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id del producto a eliminar",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Product": {
+        "required": [
+          "name",
+          "price",
+          "stock"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

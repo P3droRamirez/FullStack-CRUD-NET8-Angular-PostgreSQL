@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1po5oX4LuQNawMiRtHY+JhVU6Rl0+9X9fqYRyqtqzHk=",
+  "Source": "BackendAppProducto",
+  "BasePath": "_content/BackendAppProducto",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
