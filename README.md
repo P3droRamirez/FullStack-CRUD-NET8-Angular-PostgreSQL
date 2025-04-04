@@ -1,8 +1,13 @@
 # 🛒 FullStack-CRUD-NET8-Angular-PostgreSQL  
-## Product Manager - Full Stack con .NET 8, Angular y PostgreSQL  
+## 📌 Descripción del Proyecto
 
-Una aplicación Full Stack para gestionar productos con una API REST en .NET Core 8, un frontend en Angular y una base de datos PostgreSQL en contenedores Docker.  
+Aplicación Full Stack completa para gestión de productos con:
+- **Backend**: API REST en .NET 8 (C#) con Entity Framework Core
+- **Frontend**: Aplicación Angular con TypeScript
+- **Base de datos**: PostgreSQL en contenedor Docker
+- **Infraestructura**: Docker Compose para orquestación de servicios
 
+  
 ## 🚀 Tecnologías utilizadas  
 - **.NET Core 8 (C#)** - Backend  
 - **Angular** - Frontend  
