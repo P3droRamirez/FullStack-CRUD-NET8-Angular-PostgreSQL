@@ -78,15 +78,7 @@ Base URL: `http://localhost:5000/api/Products`
    ```bash
    curl -X DELETE "http://localhost:5000/api/Products/deleteProduct/3fa85f64-5717-4562-b3fc-2c963f66afa6"
     ```
-PostgreSQL:
 
-Host: db
-
-Puerto: 5432
-
-Usuario: postgres
-
-Password: P@ssw0rd
 ## 🎥 Demostración  
 
 Aquí puedes ver la aplicación en funcionamiento:  
