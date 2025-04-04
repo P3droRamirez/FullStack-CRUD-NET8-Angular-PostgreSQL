@@ -62,15 +62,15 @@ Base URL: `http://localhost:5000/api/Products`
    ```bash
    curl -X GET "http://localhost:5000/api/Products/products"
    ```
- 2. **Crear un producto**:
+2. **Crear un producto**:
    ```bash
-   curl -X POST "http://localhost:5000/api/Products" \
+     curl -X POST "http://localhost:5000/api/Products" \
     -H "Content-Type: application/json" \
     -d '{"name":"Teclado","price":59.99,"stock":20}'"
-  ```
+    ```
 3. **Actualizar producto :
      ```bash
-   curl -X PUT "http://localhost:5000/api/Products/modify/3fa85f64-5717-4562-b3fc-2c963f66afa6" \
+     curl -X PUT "http://localhost:5000/api/Products/modify/3fa85f64-5717-4562-b3fc-2c963f66afa6" \
     -H "Content-Type: application/json" \
     -d '{"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","name":"Teclado Mecánico","price":89.99,"stock":15}'
     ```
