@@ -34,6 +34,6 @@ ng version
 
 Aquí puedes ver la aplicación en funcionamiento:  
 
-![Demo de la aplicación](./docs/demoColor.gif)
+![Demo de la aplicación](./docs/DemoColor.gif)
 
 
